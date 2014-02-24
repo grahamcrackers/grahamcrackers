@@ -77,3 +77,12 @@ body {
     border-bottom: 0;
   }
 }
+
+snap-content {
+    background-color: #0096D6;
+    border-left: 1px solid #ccc;
+}
+
+.navbar-static-top {
+    border-radius: 0;
+}

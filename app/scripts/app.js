@@ -1,18 +1,15 @@
 'use strict';
+var app = angular.module('gcApp', ['ngRoute','snap']);
 
-angular.module('grahamcrackersApp', [
-  'ngCookies',
-  'ngResource',
-  'ngSanitize',
-  'ngRoute'
-])
-  .config(function ($routeProvider) {
+app.config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .otherwise({
-        redirectTo: '/'
-      });
+//      .otherwise({
+//        redirectTo: '/'
+//      });
+
+    $locationProvider.html5Mode(true);
   });
